@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.ilearn.gui.ModiclientreclamationController">
+   <children>
+      <Label layoutX="24.0" layoutY="319.0" text="Id reclamation" />
+      <Label layoutX="355.0" layoutY="366.0" text="Contenu" />
+      <TableView fx:id="tableclientreclamation" layoutX="31.0" layoutY="69.0" prefHeight="200.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="id_reclmation" prefWidth="100.80001831054688" text="Idreclamation" />
+          <TableColumn fx:id="id_user" prefWidth="67.99995422363281" text="iduser" />
+            <TableColumn fx:id="id_category" prefWidth="98.39996337890625" text="idcategory" />
+            <TableColumn fx:id="datereclamation" prefWidth="116.00006103515625" text="datereclamation" />
+            <TableColumn fx:id="contenuereclamation" prefWidth="249.59991455078125" text="contenue" />
+        </columns>
+      </TableView>
+      <Button fx:id="modifierrecla" layoutX="31.0" layoutY="436.0" mnemonicParsing="false" onAction="#clickmodifierrecla" text="Modifier" />
+      <Button fx:id="suprimerreclam" layoutX="187.0" layoutY="436.0" mnemonicParsing="false" onAction="#cliksuprimerrecla" text="suprimer" />
+      <Button fx:id="retourajoutereclam" layoutX="10.0" layoutY="24.0" mnemonicParsing="false" onAction="#clikretourreclamation" text="Retour" />
+      <ComboBox fx:id="modifiercategoryrecla" layoutX="420.0" layoutY="324.0" prefWidth="150.0" />
+      <TextField fx:id="textidcategory" layoutX="100.0" layoutY="370.0" />
+      <TextField fx:id="textidreclamation" layoutX="112.0" layoutY="315.0" />
+      <TextArea fx:id="textcontenureclamation" layoutX="414.0" layoutY="366.0" prefHeight="76.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="374.0" text="id category" />
+   </children>
+</AnchorPane>

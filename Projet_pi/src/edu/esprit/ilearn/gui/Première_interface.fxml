@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.ilearn.gui.Première_interfaceController">
+   <children>
+      <HBox layoutX="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="56.0" prefWidth="974.0" style="-fx-background-color: #424f77;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="57.0" prefWidth="135.0" text="Sign up" />
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="29.0" />
+            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="128.0" text="Log in" />
+            <AnchorPane prefHeight="30.0" prefWidth="581.0">
+               <children>
+                  <Label layoutX="121.0" prefHeight="17.0" prefWidth="482.0" text="Make every study hour count ">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="70.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/pidev_ilearn/Projet_pi/src/edu/esprit/ilearn/gui/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

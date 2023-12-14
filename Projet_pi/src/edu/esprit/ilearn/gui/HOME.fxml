@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleRole="PASSWORD_FIELD" prefHeight="414.0" prefWidth="759.0" style="-fx-background-color: #6185f0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.ilearn.gui.HOMEController">
+   <children>
+      <Button fx:id="connecter" layoutX="633.0" layoutY="135.0" mnemonicParsing="false" onAction="#se_connecter" prefHeight="25.0" prefWidth="95.0" text="Se connecter" textFill="#222020" />
+      <Label layoutX="401.0" layoutY="104.0" prefHeight="35.0" prefWidth="69.0" stylesheets="@styleUser.css" text="Login" />
+      <Label layoutX="395.0" layoutY="147.0" prefHeight="35.0" prefWidth="69.0" text="Mot de passe " />
+      <TextField fx:id="loginhome" layoutX="470.0" layoutY="109.0" promptText="username" />
+      <Button fx:id="pwdoublier" layoutX="401.0" layoutY="228.0" mnemonicParsing="false" onAction="#pwd_oublier" prefHeight="25.0" prefWidth="253.0" text="Mot de passe oublié ?" />
+      <Button fx:id="button_créer_compte" layoutX="401.0" layoutY="284.0" mnemonicParsing="false" onAction="#créer_compte" prefHeight="25.0" prefWidth="253.0" text="Créer nouveau compte" />
+      <VBox prefHeight="408.0" prefWidth="366.0" style="-fx-background-color: #424f77;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="NEVER">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="60.0" prefWidth="319.0" text="Découvrez plus des cours et d'enseignants" textAlignment="JUSTIFY" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="343.0" text=" utilisent ILEARN.">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children></VBox>
+      <Label layoutX="380.0" layoutY="25.0" prefHeight="17.0" prefWidth="354.0" text="Bienvenue a ILEARN">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwdhome" layoutX="470.0" layoutY="152.0" promptText="userpwd" />
+   </children>
+</AnchorPane>

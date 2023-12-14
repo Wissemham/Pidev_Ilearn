@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.ilearn.gui.AdminCommandesController">
+   <children>
+      <TableView fx:id="tableviewadmin" layoutX="181.0" layoutY="147.0" prefHeight="306.0" prefWidth="410.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="112.0" text="IdCommand" />
+          <TableColumn fx:id="date" prefWidth="94.0" text="Date" />
+            <TableColumn fx:id="total" prefWidth="95.0" text="Total" />
+            <TableColumn fx:id="etat" prefWidth="109.0" text="Etat" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonn" layoutX="120.0" layoutY="416.0" mnemonicParsing="false" onAction="#modifieretat" prefHeight="25.0" prefWidth="96.0" text="Modifier" />
+      <ComboBox id="combo" fx:id="combo" layoutX="75.0" layoutY="380.0" prefHeight="25.0" prefWidth="186.0" />
+      <Label layoutX="117.0" layoutY="341.0" prefHeight="25.0" prefWidth="103.0" text="Change Etat :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tab" layoutX="-2.0" prefHeight="267.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="t" prefWidth="107.0" text="id" />
+          <TableColumn fx:id="idi" prefWidth="106.0" text="idcommande" />
+            <TableColumn fx:id="idf" prefWidth="100.0" text="idformation" />
+            <TableColumn fx:id="pri" prefWidth="111.0" text="prix" />
+        </columns>
+      </TableView>
+      <Button layoutX="88.0" layoutY="452.0" mnemonicParsing="false" onAction="#viewLigneCommandeById" prefHeight="25.0" prefWidth="161.0" text="Afficher Elem Commande" />
+   </children>
+</AnchorPane>

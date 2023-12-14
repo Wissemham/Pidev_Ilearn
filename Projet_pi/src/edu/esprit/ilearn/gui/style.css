@@ -1,0 +1,28 @@
+
+
+
+.button
+{
+-fx-background-color :  #2F5063;
+-fx-background-radius :90;
+
+
+-fx-text-fill:  #FDFEFE;
+}
+
+.text-field {
+    -fx-background-color:  #E5E7E9 ;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-background-radius :90;
+}
+.button:hover
+{
+-fx-background-color :  #6185f0 ;
+-fx-text-fill:  #FDFEFE;
+}
+.button:pressed
+{
+-fx-background-color :  #17A589 ;
+-fx-text-fill: #FDFEFE;
+}
+
